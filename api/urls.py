@@ -19,6 +19,6 @@ from .views import login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    re_path('api/(?P<version>(v1|v2))/', include('music.urls')),
+    re_path('api/', include('music.urls')),
     path('api/login', login),
 ]
